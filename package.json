@@ -1,0 +1,60 @@
+{
+  "name": "@tableau/server-client-ts",
+  "version": "0.1.0",
+  "description": "TypeScript implementation of Tableau Server Client (TSC) compatible with Python tableauserverclient",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rimraf dist",
+    "compile": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "keywords": [
+    "tableau",
+    "server",
+    "client",
+    "typescript",
+    "rest-api",
+    "tableau-server",
+    "tsc"
+  ],
+  "author": "Claude AI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petewhore/tsc-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/petewhore/tsc-ts/issues"
+  },
+  "homepage": "https://github.com/petewhore/tsc-ts#readme",
+  "dependencies": {
+    "@zodios/core": "^10.9.6",
+    "axios": "^1.6.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
